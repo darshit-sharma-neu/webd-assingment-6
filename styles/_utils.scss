@@ -1,0 +1,15 @@
+@mixin reset-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@function grid-padding($padding){
+    @if($padding > 50){
+        @return 15px;
+    }
+    @else{
+        @return 10px;
+    }
+
+}

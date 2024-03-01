@@ -1,0 +1,28 @@
+@import '../utils';
+@import '../grid/grid.scss';
+
+.image-gallery{
+    .grid-container-2{
+        // @include grid-layout(100px, 300px ,2);
+        justify-content: center;
+        div{
+            border-radius: 10px;
+            margin: 10px 5px 10px 5px;
+            overflow: hidden;
+            width: 500px;
+            height: 350px;
+            background-color: $header_background;
+        }
+    }
+    img{
+        text-align: center;
+        width: 470px;
+        height: 300px;
+        padding: 15px;
+    }
+}
+
+.gallery-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    z-index: 1;
+}

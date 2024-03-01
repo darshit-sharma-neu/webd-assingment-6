@@ -1,0 +1,38 @@
+@import './variables';
+@import './components/header.scss';
+@import './grid/grid.scss';
+@import './components/image_gallery.scss';
+@import './components/home.scss';
+@import './components/card.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.5s ease;
+}
+
+.heading{
+    text-align: center;
+    margin: 20px 0px 30px 0px;
+    color: $header_buttons;
+    @include grid-layout(2);
+    .home-content{
+        margin: 30px;
+        width: 400px;
+    }
+}
+
+.about-content-text {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    p{
+        width: 800px;
+        text-align: justify;
+        text-justify: distribute;
+    }    
+}
+

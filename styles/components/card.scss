@@ -1,0 +1,45 @@
+@import '../variables';
+
+.container{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: $header_background;
+    width: 40%;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin-top: 50px;
+    .card-heading{
+        text-align: center;
+        margin: 10px 0px;
+    }
+
+    input {
+        border-radius: 5px;
+        margin: 10px;
+    }
+}
+
+.name-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.input-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn{
+        width: 100px;
+        background-color: blue;
+        color: white;
+    }
+}

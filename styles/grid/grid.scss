@@ -1,0 +1,29 @@
+.grid-inline-container{
+    display: inline-grid;
+}
+
+@mixin grid-layout ($num_of_elements){
+    overflow: hidden;
+    justify-items: center;
+    @if $num_of_elements == 2{
+        grid-template-columns: 35% 35%;
+    }
+
+    @if $num_of_elements == 3{
+        grid-template-columns: 30% 30% 30%;
+    }
+
+    @if $num_of_elements == 4{
+        grid-template-columns: 21% 21% 21% 21%; 
+    }
+}
+
+.grid-container-2{
+    display: grid;
+    @include grid-layout(2);
+}
+
+.grid-container-3{
+    display: grid;
+    @include grid-layout(3);
+}

@@ -1,0 +1,43 @@
+@import '../variables';
+.header{
+    $border_radius: 15px;
+    width: 100vw;
+    padding: 10px 0px;
+    background-color: $header_background;  
+    height: 100px;
+    ul {
+        list-style: none;
+        li{
+            margin: 35px 0px 10px 0px;
+        }
+        .header-item{
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            padding: 10px 0px 0px 0px;
+            background-color:  $header_buttons;
+            border-radius: $border_radius;
+            transition: all 0.5s ease;
+            a{
+                margin: 10px auto;
+                text-decoration: none;
+                color: azure;
+            }
+        }
+    }
+}
+
+.header-container{
+    position: sticky;
+    top: 0;
+}
+
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.header-item:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
